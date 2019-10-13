@@ -8,11 +8,17 @@
     <title>Simple Shopping Cart</title>
     <link rel="stylesheet" href="./assets/css/bootstrap-pulse.css">
     <link rel="stylesheet" href="/assets/css/custom-pulse.css">
+
+    <!-- bagian untuk load file javascript -->
+
+    <script src="./assets/js/jquery-3.4.1.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+    <script src="./assets/js/app.js" async></script>
 </head>
 
 <body>
     <!-- ini adalah batas Navigasi atas -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-primary">
         <a class="navbar-brand" href="#">SIMPLE SHOPPING CART</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01"
             aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
@@ -20,15 +26,9 @@
         </button>
 
         <div class="collapse navbar-collapse" id="navbarColor01">
-            <ul class="navbar-nav mr-auto">
+            <ul class="navbar-nav ml-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">HOME</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">STORE</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">ABOUT</a>
+                    <a class="nav-link" href="/">DASHBOARD</a>
                 </li>
             </ul>
         </div>
@@ -37,19 +37,105 @@
 
     <!-- ini adalah batas body atas -->
 
+    <!-- batas section jumbotron atas -->
+
     <div class="container">
-                    <div class="jumbotron">
-                            <h1 class="display-3">Hello, world!</h1>
-                            <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
-                            <hr class="my-4">
-                            <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-                            <p class="lead">
-                              <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
-                            </p>
-                          </div>
+        <div class="jumbotron">
+            <h1 class="display-5">The Shopping Cart</h1>
+            <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta dolorum nulla accusantium
+                perferendis quam explicabo odit quisquam ea natus? Saepe ducimus, minima error alias dolorum consectetur
+                officia architecto voluptatem iure sunt eveniet nam.</p>
+            <hr class="my-4">
+            <p>Developed By <strong>Ivandi Djoh Gah</strong></p>
+        </div>
+    </div>
+    <!-- batas section jumbotron bawah -->
+
+    <!-- batas Shopping Cart atas -->
+
+    <!-- ini adalah batas body atas -->
+    <div class="container">
+        <h2 class="display-5">MUSIC</h2>
+        <hr class="my-4">
+        <div class="shop-items">
+            <div class="shop-item">
+                <span class="shop-item-title">Album 1</span>
+                <img class="shop-item-image" src="./assets/images/Album 1.png">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">$12.99</span>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+            <div class="shop-item">
+                <span class="shop-item-title">Album 2</span>
+                <img class="shop-item-image" src="./assets/images/Album 2.png">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">$14.99</span>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+            <div class="shop-item">
+                <span class="shop-item-title">Album 3</span>
+                <img class="shop-item-image" src="./assets/images/Album 3.png">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">$9.99</span>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+            <div class="shop-item">
+                <span class="shop-item-title">Album 4</span>
+                <img class="shop-item-image" src="./assets/images/Album 4.png">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">$19.99</span>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <h2 class="display-5">MERCH</h2>
+        <hr class="my-4">
+        <div class="shop-items">
+            <div class="shop-item">
+                <span class="shop-item-title">T-Shirt</span>
+                <img class="shop-item-image" src="./assets/images/Shirt.png">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">$19.99</span>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+            <div class="shop-item">
+                <span class="shop-item-title">Coffee Cup</span>
+                <img class="shop-item-image" src="./assets/images/Cofee.png">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">$6.99</span>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <h2 class="display-5">CART</h2>
+        <hr class="my-4">
+        <div class="cart-row">
+            <span class="cart-item cart-header cart-column">ITEM</span>
+            <span class="cart-price cart-header cart-column">PRICE</span>
+            <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+        </div>
+        <div class="cart-items">
+        </div>
+        <div class="cart-total">
+            <strong class="cart-total-title">Total</strong>
+            <span class="cart-total-price">$0</span>
+        </div>
+        <button class="btn btn-primary btn-purchase" type="button">PURCHASE</button>
     </div>
 
+    <!-- batas Shopping Cart bawah -->
     <!-- ini adalah batas body bawah -->
+
+<br><br><br>
+
 </body>
 
 </html>
