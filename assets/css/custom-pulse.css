@@ -1,3 +1,14 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,700');
+@import url("https://fonts.googleapis.com/css?family=Metal+Mania");
+
+@font-face {
+    font-family: "Booter - Zero Zero";
+    src: url("../fonts/Booter - Zero Zero.woff") format("woff"),
+         url("../onts/Booter - Zero Zero.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+
 body {
   padding-top: 70px
 }
@@ -367,6 +378,7 @@ Custom CSS
 .cart-price {
   width: 20%;
   font-size: 1.2em;
+  font-weight: bold;
   color: #333;
 }
 
