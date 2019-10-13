@@ -16,3 +16,4 @@ https://github.com/ivandi1980/ShoppingCart.git
 ```
 ## ScreenShoots
 ![Dashboard](assets/images/dashboard.png "This is the dashboard")
+![Dashboard](assets/images/dashboard2.png "This is the dashboard")

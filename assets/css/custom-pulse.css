@@ -439,13 +439,14 @@ Custom CSS
 .cart-total-title {
   font-weight: bold;
   font-size: 1.5em;
-  color: black;
+  color: rgb(87, 87, 87);
   margin-right: 20px;
 }
 
 .cart-total-price {
   color: #333;
-  font-size: 1.1em;
+  font-size: 1.5em;
+  font-weight: bold;
 }
 
 .btn-purchase {
