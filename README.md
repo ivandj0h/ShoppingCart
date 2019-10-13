@@ -15,3 +15,4 @@ you can clone this repo to getting start with this application, by
 https://github.com/ivandi1980/ShoppingCart.git
 ```
 ## ScreenShoots
+![Dashboard](assets/images/dashboard.png "This is the dashboard")
